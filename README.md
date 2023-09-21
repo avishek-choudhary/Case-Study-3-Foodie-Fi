@@ -15,13 +15,13 @@
 
    
 ## Business Case
-Subscription based businesses are super popular and Danny realised that there was a large gap in the market - he wanted to create a new streaming service that only had food related content - something like Netflix but with only cooking shows!
+Subscription-based businesses are super popular and Danny realized that there was a large gap in the market - he wanted to create a new streaming service that only had food-related content - something like Netflix but with only cooking shows!
 
-Danny finds a few smart friends to launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, giving their customers unlimited on-demand access to exclusive food videos from around the world!
+Danny found a few smart friends to launch his new startup Foodie-Fi in 2020 and started selling monthly and annual subscriptions, giving their customers unlimited on-demand access to exclusive food videos from around the world!
 
-Danny created Foodie-Fi with a data driven mindset and wanted to ensure all future investment decisions and new features were decided using data. 
+Danny created Foodie-Fi with a data-driven mindset and wanted to ensure all future investment decisions and new features were decided using data. 
    
-This case study focuses on using Foodie-Fi data; a subscription style digital data to answer important business questions that could help the startup have an insight of critical business metrics relating to the customer journey, payment transactions, and overall business performance.
+This case study focuses on using Foodie-Fi data; subscription-style digital data to answer important business questions that could help the startup an insight into critical business metrics relating to the customer journey, payment transactions, and overall business performance.
    
    
 ---
@@ -34,65 +34,66 @@ This case study focuses on using Foodie-Fi data; a subscription style digital da
 ## Available Data
   
 <details><summary>
-    All datasets exist in database schema.
+   View
   </summary> 
   
 #### ``Table 1: plans``
 ```Schema```
-|Column Name|Data Type|Description             |
-|-----------|---------|------------------------|
+|Column Name|Data Type|Description              |
+|-----------|---------|-------------------------|
 |plan_id    |INTEGER  |A unique ID for each Plan|
 |plan_name  |VARCHAR  |Name of the Plan         |
 |price      |FLOAT    |Price of the Plan        |
 
 ```Sample Data```
-plan_id | plan_name | price
--- | -- | --
-0 | trial | 0
-1 | basic monthly | 9.90
-2 | pro monthly | 19.90
-3 | pro annual | 199
-4 | churn | null
+|plan_id|plan_name    |price|
+|-------|-------------|-----|
+|0      |trial        |0    |
+|1      |basic monthly|9.90 |
+|2      |pro monthly  |19.90|
+|3      |pro annual   |199  |
+|4      |churn        |null |
 
 #### ``Table 2: subscriptions``
 ```Schema```
-|Column Name|Data Type|Description                     |
-|-----------|---------|--------------------------------|
-|customer_id|INTEGER  |A unique ID for each Customer    |
-|plan_id    |INTEGER  |An ID of plan (can be duplicates)|
-|start_date |DATE     |Date when the plan starts        |
+|Column Name|Data Type|Description                          |
+|-----------|---------|-------------------------------------|
+|customer_id|INTEGER  |A unique ID for each Customer        |
+|plan_id    |INTEGER  |An ID of the plan (can be duplicates)|
+|start_date |DATE     |Date when the plan starts            |
 
 ```Sample Data```
-customer_id | plan_id | start_date
--- | -- | --
-1 | 0 | 2020-08-01
-1 | 1 | 2020-08-08
-2 | 0 | 2020-09-20
-2 | 3 | 2020-09-27
-11 | 0 | 2020-11-19
-11 | 4 | 2020-11-26
-13 | 0 | 2020-12-15
-13 | 1 | 2020-12-22
-13 | 2 | 2021-03-29
-15 | 0 | 2020-03-17
-15 | 2 | 2020-03-24
-15 | 4 | 2020-04-29
-16 | 0 | 2020-05-31
-16 | 1 | 2020-06-07
-16 | 3 | 2020-10-21
-18 | 0 | 2020-07-06
-18 | 2 | 2020-07-13
-19 | 0 | 2020-06-22
-19 | 2 | 2020-06-29
-19 | 3 | 2020-08-29 
+| customer_id | plan_id | start_date |
+|-------------|---------|------------|
+| 1           | 0       | 2020-08-01 |
+| 1           | 1       | 2020-08-08 |
+| 2           | 0       | 2020-09-20 |
+| 2           | 3       | 2020-09-27 |
+| 11          | 0       | 2020-11-19 |
+| 11          | 4       | 2020-11-26 |
+| 13          | 0       | 2020-12-15 |
+| 13          | 1       | 2020-12-22 |
+| 13          | 2       | 2021-03-29 |
+| 15          | 0       | 2020-03-17 |
+| 15          | 2       | 2020-03-24 |
+| 15          | 4       | 2020-04-29 |
+| 16          | 0       | 2020-05-31 |
+| 16          | 1       | 2020-06-07 |
+| 16          | 3       | 2020-10-21 |
+| 18          | 0       | 2020-07-06 |
+| 18          | 2       | 2020-07-13 |
+| 19          | 0       | 2020-06-22 |
+| 19          | 2       | 2020-06-29 |
+| 19          | 3       | 2020-08-29 |
+
 
   </details>
 
    
 ---
 ## Case Study Solutions
-- [Customer Journey]()
-- [Data Analysis Questions]()   
+- [Customer Journey](https://github.com/avishek-choudhary/Case-Study-3-Foodie-Fi/blob/main/Customer%20Journey.md)
+- [Data Analysis Questions](https://github.com/avishek-choudhary/Case-Study-3-Foodie-Fi/blob/main/Data%20Analysis.md)   
    
  ---
  ## Resources
